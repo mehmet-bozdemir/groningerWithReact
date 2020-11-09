@@ -1,6 +1,7 @@
 import axios from "axios";
+import api from "../utils/api";
 import { setAlert } from "./alert";
-import setAuthToken from "../utils/setAuthToken";
+// import setAuthToken from "../utils/setAuthToken";
 
 import {
   REGISTER_SUCCESS,
@@ -14,11 +15,12 @@ import {
 
 // Load User
 export const loadUser = () => async (dispatch) => {
-  if (localStorage.token) {
-    setAuthToken(localStorage.token);
-  }
+  // if (localStorage.token) {
+  //   setAuthToken(localStorage.token);
+  // }
 
   let token = localStorage.token;
+  // console.log(localStorage.token);
   const config = {
     headers: {
       Authorization: "Bearer " + token,

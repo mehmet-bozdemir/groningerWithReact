@@ -12,10 +12,10 @@ const Landing = ({ isAuthenticated }) => {
       <div className="landing-inner">
         <h2 className="display-2 landing-name p-2">Groninger</h2>
         <div className="buttons">
-          <Link to="/register" className="btn btn-primary">
+          <Link to="/register" className="btn btn-primary mx-1">
             Sign Up
           </Link>
-          <Link to="/login" className="btn btn-light">
+          <Link to="/login" className="btn btn-light mx-1">
             Login
           </Link>
         </div>
